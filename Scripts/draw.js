@@ -6,7 +6,7 @@ let activeColors = [];
     green: [20, 250, 50]
   };
 
-  // Button logic
+  // button event listener -> trigger color change
   document.querySelectorAll("button").forEach(btn => {
     btn.addEventListener("click", () => {
       const color = btn.dataset.color;
@@ -21,7 +21,7 @@ let activeColors = [];
     });
   });
 
-  // P5 sketch
+  // P5 canvas set up
   new p5(p => {
     let t = 0;
 
@@ -41,7 +41,7 @@ let activeColors = [];
 
       let radius = 150;
 
-      // Draw orb pixel by pixel for gradient blending
+      // To get the flowing effect, drawing canvas pixel by pixel
       for (let x = -radius; x < radius; x++) {
         for (let y = -radius; y < radius; y++) {
           let d = Math.sqrt(x * x + y * y);
@@ -58,7 +58,7 @@ let activeColors = [];
             alpha = p.constrain(alpha, 0, 255);
 
         
-            let light = p.map(d, 0, radius, 1, 0.2); // brighter center, darker edge
+            let light = p.map(d, 0, radius, 1, 0.2); // mimic 3D 
 
             p.fill(col[0] * light, col[1] * light, col[2] * light, alpha);
             
@@ -72,14 +72,14 @@ let activeColors = [];
 
     function getBlendedColor(n) {
       if (activeColors.length === 0) {
-        return [120, 120, 120]; // default gray
+        return [120, 120, 120]; // color for when no product is selected
       }
 
       if (activeColors.length === 1) {
         return colorMap[activeColors[0]];
       }
 
-      // Blend between multiple colors
+      // Blend colors using lerp
       let scaled = n * (activeColors.length - 1);
       let i = Math.floor(scaled);
       let frac = scaled - i;
