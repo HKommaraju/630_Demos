@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microclimates of Costa Rica</title>
+  <link rel="stylesheet" href="CSS_Styles/styles.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  
+ <script src="Scripts/script.js" defer></script>
+</head>
+
+<body class="page-layout">
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      
+      <ul class="nav-links">
+        
+        <li><a href="demo.html">P5 demo</a></li>
+        <li><a href="index.html">Leaflet demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="split-layout">
+
+    <div class="panels-column">
+      <section class="panel" data-zone="intro">
+        <div class="panel-content">
+          <h1>Microclimates of Costa Rica</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu neque suscipit, mattis lectus vel, gravida purus. Fusce nec suscipit nunc, at tincidunt augue. Vivamus aliquam, ex vitae blandit aliquet, nulla leo ullamcorper tellus, vitae suscipit massa magna quis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque auctor ex enim, id tristique felis tristique vitae.</p>
+        </div>
+      </section>
+    
+    <section class="panel" data-zone="guanacaste">
+      <div class="panel-content">
+        <span class="zone-label">Zone 01</span>
+        <h2>Guanacaste</h2>
+        <h3>Dry Tropical Forest</h3>
+        <p>Etiam semper, nibh id tristique volutpat, turpis dolor bibendum purus, quis eleifend ante libero a urna. Nullam molestie eleifend placerat. Vestibulum sollicitudin tortor ante, nec semper purus pretium vel. Donec molestie, purus a consequat aliquet, justo tellus sollicitudin tortor, quis auctor dui nisl in ipsum.</p>
+        <div class="panel-actions">
+          <button class="btn-eat" data-zone="guanacaste">Where to Eat</button>
+          <button class="btn-stay" data-zone="guanacaste">Where to Stay</button>
+          <button class="btn-np" data-zone="guanacaste">National Parks</button>
+        </div>
+        <div class="panel-spots hidden" id="spots-guanacaste"></div>
+        <div class="panel-spots hidden" id="parks-guanacaste"></div>
+      </div>
+    </section>
+    
+    <section class="panel" data-zone="cloud_forest">
+      <div class="panel-content">
+        <span class="zone-label">Zone 02</span>
+        <h2>Cloud Forest</h2>
+        <h3>Subtropical Highland</h3>
+        <p>Etiam semper, nibh id tristique volutpat, turpis dolor bibendum purus, quis eleifend ante libero a urna. Nullam molestie eleifend placerat. Vestibulum sollicitudin tortor ante, nec semper purus pretium vel. Donec molestie, purus a consequat aliquet, justo tellus sollicitudin tortor, quis auctor dui nisl in ipsum.</p>
+        <div class="panel-actions">
+          <button class="btn-eat" data-zone="cloud_forest">Where to Eat</button>
+          <button class="btn-stay" data-zone="cloud_forest">Where to Stay</button>
+        </div>
+        <div class="panel-spots hidden" id="spots-cloud_forest"></div>
+      </div>
+    </section>
+  </div>
+  
+  <div class="map-column">
+    <div id="costa-rica-map"></div>
+  </div>
+
+  </main>
+
+  <footer class="site-footer">
+    
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1170 @@
+{
+  "layers": [
+    {
+      "layerDefinition": {
+        "objectIdField": "OBJECTID",
+        "templates": [],
+        "type": "Feature Layer",
+        "drawingInfo": {
+          "renderer": {
+            "field1": "TYPEID",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+              {
+                "symbol": {
+                  "style": "esriSFSSolid",
+                  "color": [115, 178, 115, 255],
+                  "outline": {
+                    "style": "esriSLSSolid",
+                    "color": [115, 178, 115, 255],
+                    "width": 0.25,
+                    "type": "esriSLS"
+                  },
+                  "type": "esriSFS"
+                },
+                "description": "",
+                "value": "0",
+                "label": "Recreational Area"
+              }
+            ]
+          }
+        },
+        "displayField": "TITLE",
+        "visibilityField": "VISIBLE",
+        "name": "Recreational Areas",
+        "hasAttachments": false,
+        "typeIdField": "TYPEID",
+        "capabilities": "Query,Editing",
+        "types": [
+          {
+            "id": 0,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolFreehand",
+                "description": "",
+                "name": "Recreational Area",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Recreational Area",
+                    "TYPEID": 0
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Recreational Area"
+          }
+        ],
+        "geometryType": "esriGeometryPolygon",
+        "fields": [
+          {
+            "alias": "OBJECTID",
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "editable": false
+          },
+          {
+            "alias": "Title",
+            "name": "TITLE",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Visible",
+            "name": "VISIBLE",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          },
+          {
+            "alias": "Description",
+            "name": "DESCRIPTION",
+            "length": 1073741822,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image URL",
+            "name": "IMAGE_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image Link URL",
+            "name": "IMAGE_LINK_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "DATE",
+            "name": "DATE",
+            "length": 36,
+            "type": "esriFieldTypeDate",
+            "editable": true
+          },
+          {
+            "alias": "Type ID",
+            "name": "TYPEID",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          }
+        ],
+        "extent": null
+      },
+      "popupInfo": {
+        "mediaInfos": [
+          {
+            "value": {
+              "sourceURL": "{IMAGE_URL}",
+              "linkURL": "{IMAGE_LINK_URL}"
+            },
+            "type": "image"
+          }
+        ],
+        "title": "{TITLE}",
+        "description": "{DESCRIPTION}"
+      },
+      "featureSet": { "geometryType": "esriGeometryPolygon", "features": [] },
+      "nextObjectId": 0
+    },
+    {
+      "layerDefinition": {
+        "objectIdField": "OBJECTID",
+        "templates": [],
+        "type": "Feature Layer",
+        "drawingInfo": {
+          "renderer": {
+            "field1": "TYPEID",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+              {
+                "symbol": {
+                  "style": "esriSLSDashDot",
+                  "color": [56, 168, 0, 255],
+                  "width": 1.5,
+                  "type": "esriSLS"
+                },
+                "description": "",
+                "value": "0",
+                "label": "Walking"
+              },
+              {
+                "symbol": {
+                  "style": "esriSLSDash",
+                  "color": [0, 169, 230, 255],
+                  "width": 2,
+                  "type": "esriSLS"
+                },
+                "description": "",
+                "value": "1",
+                "label": "Biking"
+              },
+              {
+                "symbol": {
+                  "style": "esriSLSSolid",
+                  "color": [115, 76, 0, 255],
+                  "width": 2,
+                  "type": "esriSLS"
+                },
+                "description": "",
+                "value": "2",
+                "label": "Equestrian"
+              },
+              {
+                "symbol": {
+                  "style": "esriSLSDash",
+                  "color": [156, 156, 156, 255],
+                  "width": 1.5,
+                  "type": "esriSLS"
+                },
+                "description": "",
+                "value": "3",
+                "label": "Stairway"
+              },
+              {
+                "symbol": {
+                  "style": "esriSLSSolid",
+                  "color": [250, 52, 17, 255],
+                  "width": 2,
+                  "type": "esriSLS"
+                },
+                "description": "",
+                "value": "4",
+                "label": "Motorized"
+              },
+              {
+                "symbol": {
+                  "style": "esriSLSSolid",
+                  "color": [255, 170, 0, 255],
+                  "width": 2,
+                  "type": "esriSLS"
+                },
+                "description": "",
+                "value": "5",
+                "label": "Cross-country skiing"
+              }
+            ]
+          }
+        },
+        "displayField": "TITLE",
+        "visibilityField": "VISIBLE",
+        "name": "Trails",
+        "hasAttachments": false,
+        "typeIdField": "TYPEID",
+        "capabilities": "Query,Editing",
+        "types": [
+          {
+            "id": 0,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolFreehand",
+                "description": "",
+                "name": "Walking",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Walking",
+                    "TYPEID": 0
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Walking"
+          },
+          {
+            "id": 1,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolFreehand",
+                "description": "",
+                "name": "Biking",
+                "prototype": {
+                  "attributes": { "VISIBLE": 1, "TITLE": "Biking", "TYPEID": 1 }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Biking"
+          },
+          {
+            "id": 2,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolFreehand",
+                "description": "",
+                "name": "Equestrian",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Equestrian",
+                    "TYPEID": 2
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Equestrian"
+          },
+          {
+            "id": 3,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolLine",
+                "description": "",
+                "name": "Stairway",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Stairway",
+                    "TYPEID": 3
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Stairway"
+          },
+          {
+            "id": 4,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolFreehand",
+                "description": "",
+                "name": "Motorized",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Motorized",
+                    "TYPEID": 4
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Motorized"
+          },
+          {
+            "id": 5,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolFreehand",
+                "description": "",
+                "name": "Cross-country skiing",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Cross-country skiing",
+                    "TYPEID": 5
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Cross-country skiing"
+          }
+        ],
+        "geometryType": "esriGeometryPolyline",
+        "fields": [
+          {
+            "alias": "OBJECTID",
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "editable": false
+          },
+          {
+            "alias": "Title",
+            "name": "TITLE",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Visible",
+            "name": "VISIBLE",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          },
+          {
+            "alias": "Description",
+            "name": "DESCRIPTION",
+            "length": 1073741822,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image URL",
+            "name": "IMAGE_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image Link URL",
+            "name": "IMAGE_LINK_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "DATE",
+            "name": "DATE",
+            "length": 36,
+            "type": "esriFieldTypeDate",
+            "editable": true
+          },
+          {
+            "alias": "Type ID",
+            "name": "TYPEID",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          }
+        ],
+        "extent": null
+      },
+      "popupInfo": {
+        "mediaInfos": [
+          {
+            "value": {
+              "sourceURL": "{IMAGE_URL}",
+              "linkURL": "{IMAGE_LINK_URL}"
+            },
+            "type": "image"
+          }
+        ],
+        "title": "{TITLE}",
+        "description": "{DESCRIPTION}"
+      },
+      "featureSet": { "geometryType": "esriGeometryPolyline", "features": [] },
+      "nextObjectId": 0
+    },
+    {
+      "layerDefinition": {
+        "objectIdField": "OBJECTID",
+        "templates": [],
+        "type": "Feature Layer",
+        "drawingInfo": {
+          "renderer": {
+            "field1": "TYPEID",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+              {
+                "symbol": {
+                  "horizontalAlignment": "left",
+                  "style": "esriSMSCircle",
+                  "backgroundColor": [255, 255, 255, 127],
+                  "color": [0, 0, 0, 255],
+                  "font": {
+                    "weight": "bold",
+                    "style": "normal",
+                    "decoration": "none",
+                    "family": "Arial Unicode MS",
+                    "size": 14
+                  },
+                  "borderLineColor": [0, 0, 0, 127],
+                  "type": "esriTS"
+                },
+                "description": "",
+                "value": "0",
+                "label": "Recreation Label"
+              }
+            ]
+          }
+        },
+        "displayField": "TITLE",
+        "visibilityField": "VISIBLE",
+        "name": "Recreation Labels",
+        "hasAttachments": false,
+        "typeIdField": "TYPEID",
+        "capabilities": "Query,Editing",
+        "types": [
+          {
+            "id": 0,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolText",
+                "description": "",
+                "name": "Recreation Label",
+                "prototype": { "attributes": { "VISIBLE": 1, "TYPEID": 0 } }
+              }
+            ],
+            "domains": {},
+            "name": "Recreation Label"
+          }
+        ],
+        "geometryType": "esriGeometryPoint",
+        "fields": [
+          {
+            "alias": "OBJECTID",
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "editable": false
+          },
+          {
+            "alias": "Title",
+            "name": "TITLE",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Visible",
+            "name": "VISIBLE",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          },
+          {
+            "alias": "Description",
+            "name": "DESCRIPTION",
+            "length": 1073741822,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image URL",
+            "name": "IMAGE_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image Link URL",
+            "name": "IMAGE_LINK_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "DATE",
+            "name": "DATE",
+            "length": 36,
+            "type": "esriFieldTypeDate",
+            "editable": true
+          },
+          {
+            "alias": "Type ID",
+            "name": "TYPEID",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          },
+          {
+            "alias": "Text",
+            "name": "TEXT",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          }
+        ],
+        "extent": null
+      },
+      "featureSet": { "geometryType": "esriGeometryPoint", "features": [] },
+      "nextObjectId": 0
+    },
+    {
+      "layerDefinition": {
+        "objectIdField": "OBJECTID",
+        "templates": [],
+        "type": "Feature Layer",
+        "drawingInfo": {
+          "renderer": {
+            "field1": "TYPEID",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/OutdoorRecreation/Park.png"
+                },
+                "description": "",
+                "value": "0",
+                "label": "Trail Head"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/PeoplePlaces/Restroom.png"
+                },
+                "value": "1",
+                "label": "Restrooms"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/OutdoorRecreation/Camping.png"
+                },
+                "value": "2",
+                "label": "Camping"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/OutdoorRecreation/RestArea.png"
+                },
+                "value": "3",
+                "label": "Rest Area"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/PeoplePlaces/DrinkingWater.png"
+                },
+                "value": "4",
+                "label": "Drinking Water"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/PeoplePlaces/Shower.png"
+                },
+                "value": "5",
+                "label": "Showers"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/PeoplePlaces/Dining.png"
+                },
+                "value": "6",
+                "label": "Dining"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/SafetyHealth/Doctor.png"
+                },
+                "value": "7",
+                "label": "Medical Facility"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/Transportation/Tunnel.png"
+                },
+                "value": "8",
+                "label": "Ranger Station"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/OutdoorRecreation/RVPark.png"
+                },
+                "value": "9",
+                "label": "RV Parking"
+              },
+              {
+                "symbol": {
+                  "height": 24,
+                  "width": 24,
+                  "contentType": "image/png",
+                  "type": "esriPMS",
+                  "url": "http://static.arcgis.com/images/Symbols/NPS/npsPictograph_0085.png"
+                },
+                "value": "10",
+                "label": "Trash Can"
+              }
+            ]
+          }
+        },
+        "displayField": "TITLE",
+        "visibilityField": "VISIBLE",
+        "name": "Facilities",
+        "hasAttachments": false,
+        "typeIdField": "TYPEID",
+        "capabilities": "Query,Editing",
+        "types": [
+          {
+            "id": 0,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Trail Head",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Trail Head",
+                    "TYPEID": 0
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Trail Head"
+          },
+          {
+            "id": 1,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Restrooms",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Restrooms",
+                    "TYPEID": 1
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Restrooms"
+          },
+          {
+            "id": 2,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Camping",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Camping",
+                    "TYPEID": 2
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Camping"
+          },
+          {
+            "id": 3,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Rest Area",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Rest Area",
+                    "TYPEID": 3
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Rest Area"
+          },
+          {
+            "id": 4,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Drinking Water",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Drinking Water",
+                    "TYPEID": 4
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Drinking Water"
+          },
+          {
+            "id": 5,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Showers",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Showers",
+                    "TYPEID": 5
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Showers"
+          },
+          {
+            "id": 6,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Dining",
+                "prototype": {
+                  "attributes": { "VISIBLE": 1, "TITLE": "Dining", "TYPEID": 6 }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Dining"
+          },
+          {
+            "id": 7,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Medical Facility",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Medical Facility",
+                    "TYPEID": 7
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Medical Facility"
+          },
+          {
+            "id": 8,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Ranger Station",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Ranger Station",
+                    "TYPEID": 8
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Ranger Station"
+          },
+          {
+            "id": 9,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "RV Parking",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "RV Parking",
+                    "TYPEID": 9
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "RV Parking"
+          },
+          {
+            "id": 10,
+            "templates": [
+              {
+                "drawingTool": "esriFeatureEditToolPoint",
+                "description": "",
+                "name": "Trash Can",
+                "prototype": {
+                  "attributes": {
+                    "VISIBLE": 1,
+                    "TITLE": "Trash Can",
+                    "TYPEID": 10
+                  }
+                }
+              }
+            ],
+            "domains": {},
+            "name": "Trash Can"
+          }
+        ],
+        "geometryType": "esriGeometryPoint",
+        "fields": [
+          {
+            "alias": "OBJECTID",
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "editable": false
+          },
+          {
+            "alias": "Title",
+            "name": "TITLE",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Visible",
+            "name": "VISIBLE",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          },
+          {
+            "alias": "Description",
+            "name": "DESCRIPTION",
+            "length": 1073741822,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image URL",
+            "name": "IMAGE_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "Image Link URL",
+            "name": "IMAGE_LINK_URL",
+            "length": 255,
+            "type": "esriFieldTypeString",
+            "editable": true
+          },
+          {
+            "alias": "DATE",
+            "name": "DATE",
+            "length": 36,
+            "type": "esriFieldTypeDate",
+            "editable": true
+          },
+          {
+            "alias": "Type ID",
+            "name": "TYPEID",
+            "type": "esriFieldTypeInteger",
+            "editable": true
+          }
+        ],
+        "extent": {
+          "xmin": -9534688.581123155,
+          "ymin": 952243.3476912698,
+          "xmax": -9268152.663292848,
+          "ymax": 1226040.7832087537,
+          "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+        }
+      },
+      "popupInfo": {
+        "mediaInfos": [
+          {
+            "value": {
+              "sourceURL": "{IMAGE_URL}",
+              "linkURL": "{IMAGE_LINK_URL}"
+            },
+            "type": "image"
+          }
+        ],
+        "title": "{TITLE}",
+        "description": "{DESCRIPTION}"
+      },
+      "featureSet": {
+        "geometryType": "esriGeometryPoint",
+        "features": [
+          {
+            "geometry": {
+              "x": -9430975,
+              "y": 1170813,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Arenal Volcano National Park",
+              "TYPEID": 0,
+              "OBJECTID": 0
+            }
+          },
+          {
+            "geometry": {
+              "x": -9501897,
+              "y": 1161184,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Palo Verde National Park",
+              "TYPEID": 0,
+              "OBJECTID": 1
+            }
+          },
+          {
+            "geometry": {
+              "x": -9527580,
+              "y": 1135578,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Diria National Park",
+              "TYPEID": 0,
+              "OBJECTID": 2
+            }
+          },
+          {
+            "geometry": {
+              "x": -9501840,
+              "y": 1138654,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Barra Honda National Park",
+              "TYPEID": 0,
+              "OBJECTID": 3
+            }
+          },
+          {
+            "geometry": {
+              "x": -9295785,
+              "y": 1167566,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Tortuguero National Park",
+              "TYPEID": 0,
+              "OBJECTID": 4
+            }
+          },
+          {
+            "geometry": {
+              "x": -9326531,
+              "y": 1122526,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Turrialba National Park",
+              "TYPEID": 0,
+              "OBJECTID": 5
+            }
+          },
+          {
+            "geometry": {
+              "x": -9334634,
+              "y": 1115035,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Irazú Volcano National Park",
+              "TYPEID": 0,
+              "OBJECTID": 6
+            }
+          },
+          {
+            "geometry": {
+              "x": -9292880,
+              "y": 1063918,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Chirripó National Park",
+              "TYPEID": 0,
+              "OBJECTID": 7
+            }
+          },
+          {
+            "geometry": {
+              "x": -9326207,
+              "y": 1086161,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Tapantí National Park",
+              "TYPEID": 0,
+              "OBJECTID": 8
+            }
+          },
+          {
+            "geometry": {
+              "x": -9287453,
+              "y": 1110927,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Barbilla National Park",
+              "TYPEID": 0,
+              "OBJECTID": 9
+            }
+          },
+          {
+            "geometry": {
+              "x": -9301135,
+              "y": 952243,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Corcovado National Park",
+              "TYPEID": 0,
+              "OBJECTID": 10
+            }
+          },
+          {
+            "geometry": {
+              "x": -9268650,
+              "y": 971735,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Piedras Blancas National Park",
+              "TYPEID": 0,
+              "OBJECTID": 11
+            }
+          },
+          {
+            "geometry": {
+              "x": -9268153,
+              "y": 1051611,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "La Amistad International National Park",
+              "TYPEID": 0,
+              "OBJECTID": 12
+            }
+          },
+          {
+            "geometry": {
+              "x": -9534689,
+              "y": 1213352,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Santa Rosa National Park",
+              "TYPEID": 0,
+              "OBJECTID": 13
+            }
+          },
+          {
+            "geometry": {
+              "x": -9516573,
+              "y": 1226041,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Guanacaste National Park",
+              "TYPEID": 0,
+              "OBJECTID": 14
+            }
+          },
+          {
+            "geometry": {
+              "x": -9498782,
+              "y": 1207447,
+              "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
+            },
+            "attributes": {
+              "VISIBLE": 1,
+              "TITLE": "Rincón de la Vieja Volcano National Park",
+              "TYPEID": 0,
+              "OBJECTID": 15
+            }
+          }
+        ]
+      },
+      "nextObjectId": 16
+    }
+  ],
+  "showLegend": true,
+  "opacity": 1,
+  "visibility": true
+}

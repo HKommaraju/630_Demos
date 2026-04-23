@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Restaurante Freddo",
+    "zone": "guanacaste",
+    "lat": 10.16,
+    "lng": -84.2,
+    "description": "Quintessential Costa Rican Food",
+    "price_range": "$$",
+    "type": "eating",
+    "Instagram": "Freddo"
+  },
+  {
+    "name": "Another Place",
+    "zone": "guanacaste",
+    "lat": 10.45,
+    "lng": -84.7,
+    "description": "Great Local Food",
+    "price_range": "$$",
+    "type": "staying",
+    "Instagram": "PlaceToEat"
+  },
+  {
+    "name": "Lagunas de Fraijanes",
+    "zone": "cloud_forest",
+    "lat": 10.12,
+    "lng": -84.22,
+    "description": "A respite in between mountains",
+    "price_range": "$$",
+    "type": "staying",
+    "Instagram": ""
+  }
+]
